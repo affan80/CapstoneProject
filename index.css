@@ -1,0 +1,221 @@
+body{
+    
+    background-color: rgba(255, 252, 168, 1);
+    line-height: 1.6;
+    color: #333;
+
+}
+
+/* <--- header ---> */
+
+.header .contaner{
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.header .logo{
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-left: 50rem;
+    font-weight: bold;
+}
+
+.nav a{
+    color: #333;
+    text-decoration: none;
+}
+
+hr {
+    background-color: #333;
+    margin: 0;
+    height: 0.2rem;
+    border: none;
+
+}
+
+/* <--- heading section ---> */
+
+.heading {
+    font-weight: bold;
+    text-align: center;
+    padding: 3rem;
+}
+
+.heading h1{
+    color: black;
+    font-size: 10rem;
+    margin-bottom: 2rem;
+}
+
+.heading img{
+    width: 100%;
+    height: auto;
+    border: 0.1rem solid black;
+    border-radius: 1rem ;
+}
+
+
+/* <--- Project section ---> */
+
+.Projects{
+    padding: 2rem;
+} 
+
+.project:hover{
+    background-color: rgb(218, 218, 107);
+    border-radius: 1rem;
+}
+
+
+
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.project{
+    text-align: left;
+}
+
+.project img{
+    grid-template-columns: auto;
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* <--- about section ---> */
+
+.about{
+    text-align: center;
+    padding: 2rem;
+}
+.about p{
+    margin-bottom: 1rem;
+
+}
+.about .para1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about .para2{
+    text-align: right;
+    font-size: 1rem;
+    justify-content: right;
+}
+
+/* <---- footer section ----> */
+
+.footer{
+    text-align: center;
+    padding: 1rem; 
+
+    } 
+.footer form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+}
+
+.footer input{
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+
+}
+
+.footer button{
+    background-color: rgba(2, 102, 0, 1);
+    padding: 0.5rem 1rem;
+}
+
+.footer .icon{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+
+.footer .icon a{
+    color: #333;
+
+}
+
+.footer p{
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer .Protfolio{
+    display: flex;
+    margin-right: 82rem;
+}
+
+
+
+/* <--- media queries ---> */
+
+@media (max-width: 768px){
+    .header .contaner{
+        display: grid;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .nav ul li{
+        flex-direction: column;
+        gap: 0.5;
+    }
+
+}
+
+@media (max-width: 768px){
+    .heading h1{
+        font-size: 2rem;
+    }
+    .heading img{
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 768px){
+    .project-grid{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    }
+}
+
+
+@media (max-width: 768px){
+    .footer form{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem; 
+    }   
+    .footer input{
+        padding: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .footer .Protfolio{
+        display: flex;        
+        margin-right: 82rem;
+    }
+
+}
+ 
