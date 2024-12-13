@@ -1,28 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Sansita+Swashed:wght@300..900&display=swap');
 body{
     
     background-color: rgba(255, 252, 168, 1);
     line-height: 1.6;
     color: #333;
+    font-family: "Montagu Slab";
 
 }
 
-/* <--- header ---> */
 
-.header .contaner{
+
+.Portfolio .contaner{
     display: flex;
     align-items: center;
     padding: 0 2rem;
 }
 
-.header .logo{
-    font-family: 'Pacifico', cursive;
+.portfolio .logo{
+    font-family: 'Sanista Swashed', cursive;
     font-weight: bold;
     font-size: 1.5rem;
 
 }
 
 
-.nav ul{
+.header ul{
     list-style: none;
     display: flex;
     gap: 1rem;
@@ -30,7 +32,7 @@ body{
     font-weight: bold;
 }
 
-.nav a{
+.header a{
     color: #333;
     text-decoration: none;
 }
@@ -43,7 +45,7 @@ hr {
 
 }
 
-/* <--- heading section ---> */
+
 
 .heading {
     font-weight: bold;
@@ -65,7 +67,7 @@ hr {
 }
 
 
-/* <--- Project section ---> */
+
 
 .Projects{
     padding: 2rem;
@@ -83,18 +85,18 @@ hr {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
-.project{
+.projec-img{
     text-align: left;
 }
 
-.project img{
+.project-img img{
     grid-template-columns: auto;
     display: flex;
     width: 100%;
     border-radius: 10px;
 }
 
-/* <--- about section ---> */
+
 
 .about{
     text-align: center;
@@ -116,7 +118,7 @@ hr {
     justify-content: right;
 }
 
-/* <---- footer section ----> */
+
 
 .footer{
     text-align: center;
@@ -160,14 +162,14 @@ hr {
     font-weight: bold;
 }
 
-.footer .Protfolio{
+.footer .Portfolio{
     display: flex;
     margin-right: 82rem;
 }
 
 
 
-/* <--- media queries ---> */
+
 
 @media (max-width: 768px){
     .header .contaner{
@@ -177,31 +179,34 @@ hr {
 
     }
 
-    .nav ul li{
+    .header ul li{
         flex-direction: column;
         gap: 0.5;
     }
 
 }
 
-@media (max-width: 768px){
+
     .heading h1{
         font-size: 2rem;
     }
     .heading img{
         border-radius: 10px;
     }
-}
 
-@media (max-width: 768px){
+
+
     .project-grid{
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 
     }
-}
+
+    .about{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        display: flex;
+    }
 
 
-@media (max-width: 768px){
     .footer form{
         display: flex;
         justify-content: center;
@@ -212,10 +217,9 @@ hr {
         margin-right: 0.5rem;
     }
 
-    .footer .Protfolio{
+    .footer .Portfolio{
         display: flex;        
         margin-right: 82rem;
     }
 
-}
  
