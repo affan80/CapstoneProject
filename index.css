@@ -8,46 +8,58 @@ body{
 
 }
 
-
+/* <-- Portfolio section --> */
 
 .Portfolio .contaner{
+    justify-content: space-between;
     display: flex;
-    align-items: center;
-    padding: 0 2rem;
+    padding: auto;
+    font-weight: bold;
 }
 
 .Portfolio .logo{
-    font-family: 'Sanista Swashed', cursive;
+    font-family: 'Sansita Swashed';
     font-weight: bold;
     font-size: 1.5rem;
+    transition: 0.5s;
 
 }
 
+/* <-- header section --> */
 
 .header ul{
-    width: 100%;
     list-style: none;
     display: flex;
     gap: 1rem;
     
-    justify-content: space-between;
-    font-weight: bold;
+}
+.header ul li{
+
+    margin-left: 1rem;
 }
 
-.header a{
-    color: #333;
+.header ul li a{
     text-decoration: none;
+    color: #333;
+    transition: 0.5s;
+
 }
 
+.header ul li a:hover{
+    color: #007BFF;
+}
+
+ 
 hr {
     background-color: #333;
     margin: 0;
-    height: 0.2rem;
+    height: 0.1rem;
     border: none;
 
 }
 
 
+/* <-- heading section --> */
 
 .heading {
     font-weight: bold;
@@ -69,19 +81,23 @@ hr {
 }
 
 
-
+/* <--- Projects Section ---> */
 
 .Projects{
     padding: 2rem;
 } 
 
 .project-img:hover{
-
+    transform: scale(1.1);
     background-color: rgb(218, 218, 107);
     border-radius: 1rem;
 }
 
-
+.Projects p{
+    transition: 0.8s;
+    font-size: auto;
+    margin: 0.5rem 0;
+}
 
 .project-grid{
     display: grid;
@@ -99,29 +115,30 @@ hr {
     border-radius: 10px;
 }
 
-
+/* <--- about section ---> */
 
 .about{
     text-align: center;
-    padding: 2rem;
-}
-.about p{
-    margin-bottom: 1rem;
+    padding: 3rem;
+
 
 }
-.about .para1 {
-    font-size: 3rem;
-    font-weight: bold;
+
+.about h2{
     text-align: center;
+    margin-bottom: 5rem;
+    padding-left: auto;
+    font-size: 2rem;    
 }
 
-.about .para2{
-    text-align: right;
-    font-size: 1rem;
-    justify-content: right;
+.about p{
+    text-align: center;
+    margin-top: auto;
+    margin-right: auto;
+
 }
 
-
+/* <-- footer section --> */
 
 .footer{
     text-align: center;
@@ -146,6 +163,13 @@ hr {
     padding: 0.5rem 1rem;
 }
 
+.footer .contact-btn{
+    margin-bottom: auto;
+    display: flex;
+    margin-left: auto;
+    background-color: white;
+}
+
 .footer .icon{
     display: flex;
     justify-content: center;
@@ -157,7 +181,7 @@ hr {
 
 .footer .icon a{
     color: #333;
-
+    
 }
 
 .footer p{
@@ -167,12 +191,17 @@ hr {
 
 .footer .Portfolio{
     display: flex;
-    margin-right: 82rem;
+    margin-right: auto;
 }
 
 
+.footer .copyright{
+    text-align: left;
+    margin-right: auto;    
+}
 
 
+/* <--- media query ---> */
 
 @media (max-width: 768px){
     .portfolio .contaner{
@@ -222,8 +251,102 @@ hr {
         margin-right: 0.5rem;
     }
 
-    .footer .copyright{
-        text-align: leftßß;     
-        margin-right: 82rem;
-    }
+  
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        nav ul {
+            flex-direction: column;
+            margin-top: 1rem;
+        }
+    
+        nav ul li {
+            margin: 1rem 0;
+        }
+    
+        .heading h1 {
+            font-size: 2.5rem;
+        }
+    
+        .Projects {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            padding: 1rem;
+        }
+    
+        .about h2 {
+            font-size: 1.5rem;
+        }
+    
+        .footer .newsletter input {
+            width: 100%;
+        }
+    
+        .footer .email button {
+            width: 100%;
+            margin-top: 0.5rem;
+        }
 
+        .footer .email input {
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+
+        .Projects .project-grid{
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+        }
+    }
+    
+    @media (max-width: 480px) {
+        header {
+            padding: 0.5rem;
+        }
+    
+        .heading h1 {
+            font-size: 2rem;
+        }
+    
+        .heading-image {
+            width: 100%;
+        }
+    
+        .Projects {
+            grid-template-columns: 1fr;
+            gap: 0.5rem;
+            padding: 0.5rem;
+        }
+    
+        .project-grid {
+            padding: 0.5rem;
+        }
+    
+        .about {
+            padding: 1rem;
+        }
+    
+        .about h2 {
+            font-size: 1.2rem;
+        }
+    
+        .footer .icon a {
+            font-size: 1rem;
+            margin: 0 5px;
+        }
+    
+        .footer button {
+            font-size: 0.9rem;
+        }
+
+        .footer .email button {
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+
+        .footer .email input {
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+    }
