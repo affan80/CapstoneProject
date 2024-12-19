@@ -167,7 +167,7 @@ hr {
     margin-bottom: auto;
     display: flex;
     margin-left: auto;
-    background-color:   transparent;
+    background-color:   transparents;
 }
 
 .footer .icon{
@@ -357,4 +357,4 @@ input[type="email"] {
             width: 100%;
             margin-top: 0.5rem;
         }
-    }dfgsv
+    }
