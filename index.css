@@ -167,7 +167,7 @@ hr {
     margin-bottom: auto;
     display: flex;
     margin-left: auto;
-    background-color: white;
+    background-color:   transparent;
 }
 
 .footer .icon{
@@ -200,6 +200,9 @@ hr {
     margin-right: auto;    
 }
 
+input[type="email"] {
+    background-color: transparent;
+}
 
 /* <--- media query ---> */
 
@@ -281,15 +284,18 @@ hr {
         }
     
         .footer .newsletter input {
+            display: flex;
             width: 100%;
         }
     
         .footer .email button {
+            display: flex;
             width: 100%;
             margin-top: 0.5rem;
         }
 
         .footer .email input {
+            display: flex;
             width: 100%;
             margin-top: 0.5rem;
         }
@@ -337,10 +343,12 @@ hr {
         }
     
         .footer button {
+            display: flex;
             font-size: 0.9rem;
         }
 
         .footer .email button {
+            display: flex;
             width: 100%;
             margin-top: 0.5rem;
         }
@@ -349,4 +357,4 @@ hr {
             width: 100%;
             margin-top: 0.5rem;
         }
-    }
+    }dfgsv
